@@ -1,0 +1,884 @@
+/* Allgemeine Stile */
+.centerElement {
+    text-align: center;
+}
+
+.Right {
+    display: flex;
+    padding-right: 0px;
+    margin-left: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #FEF1DC;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#impressumBody {
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar */
+.navBar img {
+    width: 30px;
+    display: block;
+}
+
+.navBar {
+    background-color: #262626dc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.navBar ul {
+    display: flex;
+    justify-content: flex-start;
+    /* Links ausrichten */
+    align-items: center;
+    margin: 0;
+    flex-grow: 1;
+    /* Ermöglicht das Wachsen der Navigation */
+}
+
+.navBar li {
+    margin: 0;
+    padding: 0;
+}
+
+.navBar #liRight {
+    margin-left: auto;
+    /* Platz zwischen Über Notide und Checkout Button */
+}
+
+.navBar a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+.navBar button {
+    padding: 10px;
+    color: #262626;
+}
+
+.navBar a:hover {
+    background-color: #262626;
+}
+
+
+/* Header */
+.header,
+.footer {
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.obersteZeile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 40px;
+}
+
+#TopLogo {
+    top: 20px;
+    left: 20px;
+    position: fixed;
+    z-index: 500;
+}
+
+#TopLogo button {
+    text-decoration: none;
+    border: none;
+    background-color: rgba(255, 222, 173, 0);
+}
+
+#TopLogo img {
+    width: 30px;
+}
+
+#topHeading {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+
+.heading1,
+.heading2 {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main Content */
+#main1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sec1 {
+    background-image: url(images/background_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+#button1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #262626;
+    background-color: #26262610;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    transition: background-color 0.3s;
+    cursor: pointer;
+    margin: 0 auto;
+    transform: translateY(+400%);
+    position: relative;
+    top: 50%;
+}
+
+#button1:hover {
+    background-color: #fef1dc6e;
+}
+
+#button1 img {
+    width: 12px;
+    margin-right: 5px;
+    transform: rotate(90deg);
+}
+
+#Button2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #262626;
+    background-color: #3f3e3e10;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    transition: background-color 0.3s;
+    cursor: pointer;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    margin-bottom: 3%;
+}
+
+#Button2:hover {
+    background-color: #fef1dc6e;
+}
+
+/*Community abschnitt*/
+#CommunitySection {
+    margin-top: 20px;
+    text-align: center;
+    padding: 5%;
+    background-image: url(images/linoloptik.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#newsletterLink {
+    padding: 3px;
+    border: 1px dashed rgb(23, 100, 82);
+    border-radius: 5px;
+}
+
+#wichtigeInfos {
+    background-color: rgba(254, 241, 220, 90%);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#produktBilder {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#produktBilder .container {
+    width: 30%;
+    margin: 0 1%;
+}
+
+.kaufenButton {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 5px;
+    cursor: pointer;
+    width: 40%;
+}
+
+.kaufenButton:hover {
+    background-color: #e3ddcc;
+}
+
+.kaufenButton button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Slider styles */
+.sliderWrapper {
+    position: relative;
+    max-width: 100%;
+    margin: 1 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 9 / 16;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider img,
+video {
+    flex: 1 0 100%;
+    scroll-snap-align: center;
+    object-fit: cover;
+}
+
+.sliderNav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.sliderNav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #FEF1DC;
+    opacity: 0.90;
+    transition: opacity ease 250ms;
+}
+
+.sliderNav a:hover {
+    opacity: 1;
+}
+
+
+/* Shop Seite */
+#ShopEinleitung {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.ShopProdukte {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Für mobile Nutzer, 2 Produkte pro Reihe, jeweils gleich breit */
+    gap: 20px;
+    /* Abstand zwischen den Produkten */
+    margin: 0 auto;
+    margin-inline-end: 2%;
+    margin-inline-start: 2%;
+}
+
+.Prod {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* Bild, Text und Button gleichmäßig anordnen */
+    justify-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #efebdd;
+    /* Optional: Hintergrundfarbe */
+    border: 1px solid #ccc;
+    /* Optional: Rahmen */
+    height: 100%;
+    /* Gleiche Höhe für alle Produkt-Divs */
+}
+
+.Prod img {
+    width: 100%;
+    object-fit: cover;
+    /* Verhindert Verzerrungen und passt das Bild an */
+    margin-bottom: 10px;
+    /* Abstand zum Text */
+}
+
+.Prod p {
+    font-size: small;
+    margin: 0;
+    /* Kein zusätzlicher Abstand um den Text */
+    white-space: normal;
+    /* Erlaubt Textumbruch, um gleiche Breite zu garantieren */
+    overflow: hidden;
+    text-align: center;
+}
+
+/*Info Text main seite*/
+#produktText {
+    text-align: center;
+    margin: 5%;
+    background-color: rgba(225, 219, 202, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px dashed;
+
+}
+
+/*Mehr lesen Buttons*/
+.readmore {
+    text-decoration: none;
+    background-color: #cccccc1c;
+    border: 1px dotted gray;
+    border-radius: 8px;
+}
+
+#produktText button:hover {
+    background-color: #2626264d;
+}
+
+#ShopQuickLink a {
+    text-decoration: underline;
+}
+
+#ShopQuickLink {
+    background-image: url(images/noBgSurfboard.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+    text-align: center;
+    font-size: small;
+    margin: auto;
+    padding: 15%;
+}
+
+#ShopQuickLink button {
+    margin: auto;
+    display: flex;
+    background-color: #cccccc58;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+#ShopQuickLink button:hover {
+    background-color: #efebdd;
+}
+
+/* Shop Img Slider */
+.SliderWrapper {
+    position: relative;
+    max-width: 100%;
+    margin: 1 auto;
+}
+
+.Slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+}
+
+.Slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: center;
+    object-fit: cover;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    /* Leicht transparent */
+    border: none;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.nav-button.left {
+    left: 5px;
+}
+
+.nav-button.right {
+    right: 5px;
+}
+
+.nav-button:hover {
+    background: rgba(0, 0, 0, 0.7);
+    /* Etwas dunkler bei Hover */
+}
+
+/* Size Guide button */
+
+#sizeGuideButton {
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    margin: auto;
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    margin-bottom: 0;
+}
+
+#sizeGuideButton button {
+    padding: 10px;
+    border-radius: 100px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    /* Sanfter Übergang bei Hover */
+}
+
+#sizeGuideButton button:hover {
+    opacity: 1;
+    /* Volle Sichtbarkeit beim Hover */
+}
+
+/* Modal Hintergrund */
+.modal {
+    display: none;
+    /* Standardmäßig ausgeblendet */
+    position: fixed;
+    z-index: 1000;
+    /* Überlagert alles andere */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Halbtransparent */
+}
+
+/* Modal Inhalt */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    /* Größe des Modals */
+}
+
+.modal-content img {
+    width: 100%;
+
+}
+
+/* Schließen-Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+
+#mainSection2 {
+    background-image: url(images/printing.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 80%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#mainSection3 hr {
+    width: 100%
+}
+
+#mainSection3 {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 30px;
+}
+
+#mainSection3 h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    /* Abstand zur Galerie */
+    width: 100%;
+}
+
+#mainSection3 img,
+video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Verhindert Verzerrung */
+    border-radius: 10px;
+    /* Abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Leichter Schatten */
+}
+
+/* Flexbox Galerie */
+#mainSection3 {
+    display: flex;
+    flex-wrap: wrap;
+    /* Bilder umbrechen, wenn kein Platz ist */
+    gap: 10px;
+    /* Abstand zwischen den Bildern */
+    justify-content: center;
+    /* Bilder zentriert ausrichten */
+}
+
+#mainSection3 img,
+video {
+    width: calc(33.33% - 20px);
+    /* Drei Bilder pro Zeile, mit Abstand */
+    max-width: 100%;
+    /* Verhindert Überlauf bei kleinen Bildschirmen */
+}
+
+/* Responsive Design für kleinere Bildschirme */
+@media (max-width: 768px) {
+
+    #mainSection3 img,
+    video {
+        width: calc(50% - 10px);
+        /* Zwei Bilder pro Zeile bei kleineren Geräten */
+    }
+}
+
+@media (max-width: 480px) {
+
+    #mainSection3 img,
+    video {
+        width: calc(50% - 10px);
+        /* Zwei Bilder pro Zeile auch auf sehr kleinen Geräten */
+    }
+}
+
+/* Styling für die Überlagerung */
+.gallery-overlay {
+    position: relative;
+    /* Position relativ zum Eltern-Container */
+    display: inline-block;
+    width: 100%;
+    margin-top: -100px;
+    /* Überlagerung auf das letzte Bild */
+    text-align: center;
+}
+
+.gallery-button {
+    display: inline-block;
+    background-color: rgba(41, 41, 41, 0.8);
+    /* Halbdurchsichtiger Hintergrund */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    z-index: 2;
+    /* Legt den Button über die Galerie */
+    position: absolute;
+    top: 50%;
+    /* Horizontale Ausrichtung */
+    left: 50%;
+    /* Linken anpassen */
+    transform: translate(-50%, -300%);
+    opacity: 1;
+}
+
+/* Style für Bild verblassen */
+#mainSection3 #letzte {
+    filter: blur(1.5px);
+    /* Bild wird verschwommen */
+    transition: .4s;
+    z-index: 1;
+    /* Definiert Schichten */
+}
+
+/* Hover-Animation */
+.gallery-overlay:hover #mainSection3 #letzte {
+    filter: 0px;
+    transform: scale(0.98);
+    /* Zoom-Effekt beim Hover */
+}
+
+
+#überSec {
+    background-image: url('images/ÜberBackground.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 90%;
+    background-attachment: fixed;
+    /* Das Bild bleibt fixiert beim Scrollen */
+}
+
+
+#überMain {
+    position: relative;
+    z-index: 2;
+    /* Sicherstellen, dass der Text über dem Hintergrundbild liegt */
+    margin: 4%;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Optional: Hintergrund für den Textbereich, um die Lesbarkeit zu verbessern */
+    padding: 20px;
+    /* Optional: Innenabstand für den Text */
+    border-radius: 5px;
+    /* Optional: Abgerundete Ecken */
+}
+
+#IchWer {
+    max-width: 50%;
+    width: auto;
+    height: auto;
+    float: left;
+    
+    /* Dies lässt den Text um das Bild fließen */
+    margin-right: 20px;
+    /* Abstand zwischen Bild und Text */
+    margin-bottom: 10px;
+    /* Optionaler Abstand nach unten */
+
+
+}
+
+.BildundText {
+    overflow: auto;
+    /* Verhindert Kollaps durch das float */
+}
+
+.BildundText p {
+    margin: 0;
+    /* Optional: Entfernt Standard-Absatzabstände */
+}
+
+
+.MainProduktÜberschriften {
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+/* FAQ Container */
+#faq-container {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 600px;
+    background: #f9f9f929;
+}
+
+/* Fragen */
+.question {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    background: #e0e0e0;
+    border-radius: 5px;
+}
+
+.question:hover {
+    background-color: #d0d0d0;
+}
+
+/* Antworten - Standardmäßig versteckt */
+.answer {
+    display: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #ffffff68;
+    border-left: 3px solid #065031;
+    border-radius: 5px;
+}
+
+/* Ab einer bestimmten Bildschirmbreite (z.B. 768px) 4 Produkte pro Reihe */
+@media screen and (min-width: 768px) {
+    .ShopProdukte {
+        grid-template-columns: repeat(4, 1fr);
+        /* Für PC-Nutzer, 4 Produkte pro Reihe */
+    }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    /* Elemente nach links und rechts verteilen */
+    align-items: center;
+    /* Vertikal zentrieren */
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.instaButton {
+    text-decoration: none;
+    background-color: #cccccc00;
+    border: none;
+}
+
+.instaButton img {
+    width: 30px;
+}
+
+/* Responsive adjustments using media queries */
+
+/* Mobile-first approach: Adjust styles for smaller screens */
+@media only screen and (max-width: 768px) {
+
+    /*over all adjustments*/
+    body {
+        text-size-adjust: 70%;
+    }
+
+    /* Navbar adjustments for mobile */
+    .navBar ul {
+        flex-direction: row;
+        /* Navigation bleibt in einer Zeile auch auf kleineren Bildschirmen */
+    }
+
+    .navBar a {
+        font-size: 14px;
+        /* Kleinere Schriftgröße für mobile Bildschirme */
+        padding: 10px;
+    }
+
+    .navBar #liRight {
+        margin-left: auto;
+        /* Sicherstellen, dass der Checkout Button rechts bleibt */
+    }
+
+    #liRight button {
+        padding: 5px;
+    }
+
+
+    /* Adjust the header logo and text for mobile */
+    .heading1 {
+        font-size: 24px;
+        /* Smaller heading size for mobile */
+    }
+
+    /* Main content adjustment for mobile */
+    #produktBilder {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #produktBilder .container {
+        width: 90%;
+        /* Expand containers to better fit mobile screens */
+        margin: 10px 0;
+    }
+
+    /* Adjust buttons to better fit mobile screens */
+    .kaufenButton {
+        width: 80%;
+        /* Make buttons more accessible on smaller screens */
+    }
+
+    /* Product headings adjustment for mobile */
+    #productHeadings {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    #productHeadings h3 {
+        width: 100%;
+        font-size: 16px;
+        /* Adjust text size for better mobile readability */
+    }
+}
+
+/* Desktop adjustments */
+@media only screen and (min-width: 769px) {
+
+    /* Keep existing styles for larger screens */
+    .navBar ul {
+        flex-direction: row;
+    }
+}
