@@ -93,6 +93,9 @@ ul {
     background-color: #262626;
 }
 
+#instaTop{
+   scale: 85%;
+}
 
 /* Header */
 .header,
@@ -292,6 +295,7 @@ video {
     flex: 1 0 100%;
     scroll-snap-align: center;
     object-fit: cover;
+    width: 100%;
 }
 
 .sliderNav {
@@ -520,7 +524,7 @@ video {
 
 .modal-content img {
     width: 100%;
-
+    
 }
 
 /* Schließen-Button */
@@ -881,4 +885,9 @@ video {
     .navBar ul {
         flex-direction: row;
     }
+}
+
+#datenschutzMain{
+    margin: auto;
+    padding: 10%;
 }
