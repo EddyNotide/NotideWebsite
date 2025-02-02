@@ -238,6 +238,13 @@ ul {
     padding-right: 10px;
 }
 
+.comingSoonText{
+    text-align: center;
+    transform: translate(0, +400px) rotate(-20deg);
+    position: sticky;
+    z-index: 1;
+}
+
 #produktBilder {
     display: flex;
     justify-content: space-between;
@@ -290,12 +297,17 @@ ul {
     border-radius: 0.5rem;
 }
 
+.slider img{
+    width: 100%;
+    scale: 100%;
+}
+
 .slider img,
 video {
     flex: 1 0 100%;
     scroll-snap-align: center;
     object-fit: cover;
-    width: 100%;
+    
 }
 
 .sliderNav {
@@ -544,6 +556,7 @@ video {
 
 #mainSection2 {
     background-image: url(images/printing.jpg);
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
