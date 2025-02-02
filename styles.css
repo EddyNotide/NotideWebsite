@@ -559,7 +559,7 @@ video {
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100% auto;
     background-attachment: fixed;
     opacity: 80%;
     padding-top: 40px;
@@ -683,7 +683,7 @@ video {
 
 
 #überSec {
-    background-image: url('images/ÜberBackground.jpg');
+    background-image: url('images/ueberbg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
