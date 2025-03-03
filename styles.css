@@ -334,7 +334,7 @@ video {
 }
 
 #FotoContainer img{
-    width: auto;
+    width: 100%;
 }
 
 /* Shop Seite */
