@@ -240,7 +240,7 @@ ul {
 
 .comingSoonText{
     text-align: center;
-    transform: translate(0, +400px) rotate(-20deg);
+    transform: translate(0, +450px) rotate(-20deg);
     position: sticky;
     z-index: 1;
 }
@@ -333,6 +333,9 @@ video {
     opacity: 1;
 }
 
+#FotoContainer img{
+    width: auto;
+}
 
 /* Shop Seite */
 #ShopEinleitung {
