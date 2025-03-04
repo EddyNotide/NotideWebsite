@@ -222,8 +222,7 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
-
+    background-attachment: scroll; /* Fix für iOS */
 }
 
 #newsletterLink {
@@ -334,7 +333,9 @@ video {
 }
 
 #FotoContainer img{
-    width: 100%;
+    width: auto; /* Passt die Breite an den Container an */
+    max-width: 100vw; /* Verhindert, dass das Bild größer als der Viewport wird */
+    object-fit: cover; /* Sorgt für eine gute Darstellung im Rahmen */
 }
 
 /* Shop Seite */
@@ -562,9 +563,9 @@ video {
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% auto;
-    background-attachment: fixed;
-    opacity: 80%;
+    background-size: cover;
+    background-attachment: scroll;
+    opacity: 0.8;
     padding-top: 40px;
     padding-bottom: 40px;
 }
