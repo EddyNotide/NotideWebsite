@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journal — NOTIDE</title>
+  <meta name="description" content="[JOURNAL_META_DESCRIPTION — Stories, Gedanken, Bilder aus dem Alltag von NOTIDE]" />
+  <link rel="canonical" href="https://notide.de/journal.html" />
+  <meta property="og:title" content="Journal — NOTIDE" />
+  <meta property="og:description" content="[JOURNAL_META_DESCRIPTION]" />
+  <meta property="og:url" content="https://notide.de/journal.html" />
+  <meta property="og:image" content="https://notide.de/assets/images/[OG_IMAGE].jpg" />
+  <link rel="icon" href="assets/logos/favicon-32x32.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="header-left">
+        <a href="index.html" class="header-logo" aria-label="NOTIDE – Startseite"><img width="40%"
+            src="assets/logos/Signatur.png" alt=""></a>
+      </div>
+      <nav class="nav-desktop" aria-label="Hauptnavigation">
+        <a href="shop.html">Shop</a>
+        <a href="journal.html" class="active">Journal</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+      <div class="header-right">
+        <a href="newsletter.html" class="btn">Newsletter</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-mobile" id="mobile-nav" aria-label="Mobile Navigation">
+    <a href="shop.html">Shop</a>
+    <a href="journal.html">Journal</a>
+    <a href="community.html">Community</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Kontakt</a>
+    <a href="newsletter.html">Newsletter</a>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-label="Journal">
+      <div class="container">
+        <span class="label">Journal</span>
+        <h1>Thoughts from the water</h1>
+        <p>Keine Werbung, kein Spam, nur echte Geschichten vom Meer, der Natur oder Kreativität. </p>
+      </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="section" aria-label="Neuester Beitrag">
+      <div class="container">
+
+        <span class="label" style="display:block; margin-bottom:1.5rem;">Neuster Beitrag</span>
+
+        <!-- ═══════════════════════════════════════════════════
+             FEATURED ARTICLE
+             → Bilder und Texte anpassen
+        ═══════════════════════════════════════════════════ -->
+        <article id="FEATURED_ARTICLE_SLUG1" style="display:grid; grid-template-columns:1fr; gap:2rem;">
+          <!-- Article image -->
+          <div class="journal-item-image reveal" style="aspect-ratio:16/9; min-height:280px;" role="img"
+            aria-label="[FEATURED_IMAGE_ALT]">
+
+
+            <img data-src="assets/images/SPclosed.jpeg" alt="[FEATURED_IMAGE_ALT]" width="1200" height="675"
+              loading="lazy" />
+
+            <!-- [IMAGE_PLACEHOLDER — 1200×675px] -->
+          </div>
+
+          <!-- Article content -->
+          <div class="reveal">
+            <p class="label" style="margin-bottom:0.5rem;">16.04.2026</p>
+            <h2
+              style="font-family:var(--font-display); font-style:italic; font-size:var(--text-xl); line-height:1.1; margin-bottom:1rem;">
+              Immer weniger Szene Treffpunkte - Zukunft der Kieler Surfszene
+            </h2>
+            <p
+              style="color:var(--gray-dark); font-size:var(--text-base); line-height:1.75; max-width:60ch; margin-bottom:1.5rem;">
+              In den letzten Monaten ist hier etwas passiert, das viele von uns gespürt haben.
+              Ein Ort, der für die lokale Surf-Community mehr war als nur ein Laden, musste schließen...
+            </p>
+            <!-- → Link zur vollen Seite oder Anker -->
+            <a href="#ARTICLE_SLUG_1-full" class="link-underline caps">
+              Weiterlesen
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- All Articles List -->
+    <section class="section" aria-labelledby="all-articles-heading">
+      <div class="container">
+
+        <h2 id="all-articles-heading" style="font-style:italic; font-size:var(--text-xl); margin-bottom:2rem;">
+          Alle Beiträge
+        </h2>
+
+        <!--
+          ═══════════════════════════════════════════════════
+          JOURNAL ARTICLES
+          → Für jeden Artikel:
+            1. id="[ARTICLE_SLUG]" anpassen
+            2. [ARTICLE_DATE] → Datum eintragen (TT.MM.JJJJ)
+            3. [ARTICLE_TITLE] → Titel
+            4. [ARTICLE_EXCERPT] → 1–2 Sätze
+            5. [IMAGE_PLACEHOLDER] → img einsetzen
+            6. href → zur Artikel-Seite oder Anker
+          Neue Artikel oben einfügen.
+        ═══════════════════════════════════════════════════ -->
+        <div class="journal-list">
+
+          <!-- Article 1 -->
+          <article id="ARTICLE_SLUG_1-full">
+            <a href="#ARTICLE_SLUG_1-full" class="journal-item reveal">
+              <span class="journal-item-date">16.04.2026</span>
+              <div>
+                <h3 class="journal-item-title">Jedes Scheitern birgt eine Chance</h3>
+                <p class="journal-item-excerpt">
+
+                  In den letzten Monaten ist hier etwas passiert, das viele von uns gespürt haben.
+                  Ein Ort, der für die lokale Surf-Community mehr war als nur ein Laden, musste schließen.
+
+                  Nicht nur ein Shop ist verschwunden.
+                  Ein Treffpunkt ist verschwunden.
+                  Ein Stück Gemeinschaft.
+
+                  Seitdem höre ich immer wieder ähnliche Sätze:
+
+                  „Das war der authentischste Surfshop hier.“
+                  „Da hat man sich einfach wohlgefühlt.“
+                  „So einen Ort brauchen wir wieder.“
+
+                  Und genau da hat bei mir etwas angefangen zu arbeiten. <br>
+
+                  ---
+
+                  Warum ich das hier schreibe <br>
+
+                  Ich möchte transparent sein.
+                  Ich möchte euch mitnehmen.
+                  Und ich möchte nichts hinter verschlossenen Türen planen.
+
+                  Die Idee ist einfach:
+
+                  Einen neuen Ort schaffen.
+                  Einen Ort der Verbindung.
+                  Einen Ort für die Community.
+
+                  Keinen neuen Surfshop.
+                  Kein klassisches Café.
+                  Kein Business, das nur auf Profit ausgerichtet ist.
+
+                  Sondern ein Treffpunkt für Menschen, die die gleichen Werte teilen:
+
+                  Gemeinschaft,
+                  Natur,
+                  Surfen,
+                  Kreativität,
+                  Bewegung,
+                  Nachhaltigkeit <br>
+
+                  ---
+
+                  Die Vision: NOTIDE Community Hub: <br>
+
+                  Ich träume von einem Ort, an dem man:
+
+                  einen Kaffee trinken kann,
+                  Freunde trifft,
+                  an Workshops teilnimmt,
+                  zusammen Projekte startet,
+                  Ideen austauscht,
+                  und sich einfach willkommen fühlt.
+
+                  Ein Ort, der Surf-Kultur lebt.
+
+                  Der NOTIDE Community Hub soll ein Raum sein für:
+
+                  Surfer,
+                  Outdoor-Menschen,
+                  Kreative,
+                  Jugendliche,
+                  Familien,
+                  und alle, die Teil dieser Community sind <br>
+
+                  ---
+
+                  Das Projekt entsteht nicht allein! <br>
+
+                  Ganz wichtig:
+
+                  Ich will das nicht für euch bauen.
+                  Ich will das mit euch bauen.
+
+                  Deshalb habe ich eine Umfrage gestartet.
+                  Deshalb spreche ich mit Menschen aus der Szene.
+                  Deshalb filme ich den Prozess.
+                  Deshalb dokumentiere ich jeden Schritt.
+
+                  Eure Meinungen sind entscheidend.
+
+                  Was fehlt euch?
+                  Was braucht die Community?
+                  Wie soll so ein Ort aussehen? <br>
+
+                  ---
+
+                  Was gerade passiert: <br>
+
+                  Aktuell arbeite ich parallel an mehreren Dingen:
+
+                  Ich spreche mit Menschen aus der lokalen Surf-Szene.
+                  Ich sammle Ideen und Feedback.
+                  Ich entwickle ein Konzept für einen neuen Treffpunkt.
+                  Ich schreibe einen Businessplan.
+                  Ich informiere mich über Fördermöglichkeiten.
+                  Ich suche nach passenden Räumen.
+
+                  Und ich dokumentiere alles öffentlich.
+
+                  Nicht perfekt.
+                  Nicht fertig.
+                  Aber ehrlich. <br>
+
+                  ---
+
+                  Real Talk: <br>
+
+                  Das wird nicht einfach.
+
+                  Eine passende Location zu finden ist schwierig.
+                  Die Finanzierung ist eine Herausforderung.
+                  Und der Weg wird Zeit brauchen.
+
+                  Aber:
+
+                  Die Unterstützung aus der Community gibt mir unglaublich viel Motivation.
+
+                  Die Resonanz auf die ersten Videos und Gespräche zeigt mir:
+
+                  Dieses Projekt ist nicht nur meine Idee.
+                  Es ist ein gemeinsamer Wunsch. <br>
+
+                  ---
+
+                  Wie du Teil davon werden kannst <br>
+
+                  Wenn du das hier liest, bist du schon Teil dieser Reise.
+
+                  Und du kannst aktiv mitgestalten.
+
+                  Zum Beispiel:
+
+                  Teile deine Meinung,
+                  Sprich mit mir,
+                  Fülle die Umfrage aus,
+                  Erzähl anderen davon,
+                  Bring deine Ideen ein,
+                  Oder melde dich, wenn du mithelfen willst.
+
+                  Jede Stimme zählt. <br>
+
+                  ---
+
+                  Das ist erst der Anfang: <br>
+
+                  Ich weiß noch nicht genau, wie dieser Ort aussehen wird.
+                  Ich weiß noch nicht, wo er entstehen wird.
+                  Und ich weiß noch nicht, wann er eröffnet.
+
+                  Aber ich weiß:
+
+                  Wir brauchen ihn.
+
+                  Und ich glaube fest daran, dass wir ihn gemeinsam schaffen können.
+
+                  Das hier ist der Anfang.
+
+                  Mehr Updates folgen bald.
+
+                  Danke, dass du dabei bist. <br>
+
+                  — Eddy
+                </p>
+              </div>
+            </a>
+            <div class="journal-item-image reveal" role="img" aria-label="[ARTICLE_1_IMAGE_ALT]">
+
+              <img data-src="assets/images/SPclosed Kopie.jpeg" alt="[FEATURED_IMAGE_ALT]" width="900" height="600"
+                loading="lazy" />
+
+            </div>
+            <hr class="rule rule--light" style="margin: 2rem 0 0;" />
+          </article>
+
+          <!-- Article 2 -->
+          <article id="[ARTICLE_SLUG_2]">
+            <a href="#[ARTICLE_SLUG_2]-full" class="journal-item reveal">
+              <span class="journal-item-date">[ARTICLE_DATE_2]</span>
+              <div>
+                <h3 class="journal-item-title">[ARTICLE_TITLE_2]</h3>
+                <p class="journal-item-excerpt">[ARTICLE_EXCERPT_2]</p>
+              </div>
+            </a>
+            <div class="journal-item-image reveal" role="img" aria-label="[ARTICLE_2_IMAGE_ALT]">
+              coming soon
+            </div>
+            <hr class="rule rule--light" style="margin: 2rem 0 0;" />
+          </article>
+
+          <!-- Article 3 -->
+          <article id="[ARTICLE_SLUG_3]">
+            <a href="#[ARTICLE_SLUG_3]-full" class="journal-item reveal">
+              <span class="journal-item-date">[ARTICLE_DATE_3]</span>
+              <div>
+                <h3 class="journal-item-title">[ARTICLE_TITLE_3]</h3>
+                <p class="journal-item-excerpt">[ARTICLE_EXCERPT_3]</p>
+              </div>
+            </a>
+            <div class="journal-item-image reveal" role="img" aria-label="[ARTICLE_3_IMAGE_ALT]">
+              coming soon
+            </div>
+            <hr class="rule rule--light" style="margin: 2rem 0 0;" />
+          </article>
+
+          <!-- Article 4 -->
+          <article id="[ARTICLE_SLUG_4]">
+            <a href="#[ARTICLE_SLUG_4]-full" class="journal-item reveal">
+              <span class="journal-item-date">[ARTICLE_DATE_4]</span>
+              <div>
+                <h3 class="journal-item-title">[ARTICLE_TITLE_4]</h3>
+                <p class="journal-item-excerpt">[ARTICLE_EXCERPT_4]</p>
+              </div>
+            </a>
+            <hr class="rule rule--light" style="margin: 2rem 0 0;" />
+          </article>
+
+          <!-- Article 5 -->
+          <article id="[ARTICLE_SLUG_5]">
+            <a href="#[ARTICLE_SLUG_5]-full" class="journal-item reveal">
+              <span class="journal-item-date">[ARTICLE_DATE_5]</span>
+              <div>
+                <h3 class="journal-item-title">[ARTICLE_TITLE_5]</h3>
+                <p class="journal-item-excerpt">[ARTICLE_EXCERPT_5]</p>
+              </div>
+            </a>
+            <hr class="rule rule--light" style="margin: 2rem 0 0;" />
+          </article>
+
+          <!--
+            → Weitere Artikel hier nach gleichem Muster einfügen.
+              Immer oben einfügen (neuester zuerst).
+          -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="newsletter-section" aria-label="Newsletter">
+      <div class="container">
+        <span class="label" style="color:var(--tan); display:block; margin-bottom:1rem;">Keine Welle verpassen</span>
+        <h2
+          style="font-family:var(--font-display); font-style:italic; font-size:var(--text-xl); color:var(--white); margin-bottom:0.75rem;">
+          NOTIDE - News from the sea
+        </h2>
+        <form class="newsletter-form js-newsletter-form"
+          action="https://f9687fa7.sibforms.com/serve/MUIFADpKIJYaWbZKaLKrdV6HrvJprve6KB01-eT9bGP_XV4n6An2AKjuWE6p5j80feuFTHn0nzn1G3hDAf5vYckVc6GpySZ8i3yOCTKIeO6NsaCOD3q894R4dP0TVrsSQYk72qqh24xU6dl0IyO-BmCoWUDdb5J6lfqVOV8jzvoNlIQWf9xPq-MmteRicMIi5RAEWRQoy-hgnPWqLw=="
+          method="POST" novalidate>
+          <input type="email" name="email" placeholder="Deine E-Mail" required aria-label="E-Mail Adresse"
+            autocomplete="email" />
+          <input type="hidden" name="SOURCE" value="Website" />
+          <button type="submit" class="btn">Anmelden</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand-name">NOTIDE</p>
+          <p class="footer-brand-tagline">not only for surfers</p>
+        </div>
+        <div class="footer-col">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="shop.html">Alle Produkte</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Über uns</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="community.html">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Kontakt</h3>
+          <ul>
+            <li><a href="contact.html">Schreib uns</a></li>
+            <li><a href="https://www.instagram.com/notide.official?igsh=eHd0Z2xsbjNvY2I4&utm_source=qr" target="_blank"
+                rel="noopener noreferrer">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom-text">© <span class="js-year"></span> NOTIDE.</p>
+        <nav class="footer-legal-links" aria-label="Rechtliches">
+          <a href="legal.html">Impressum</a>
+          <a href="legal.html#datenschutz">Datenschutz</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <div id="newsletter-popup" role="dialog" aria-modal="true" aria-label="Newsletter" aria-hidden="true">
+    <div class="popup-inner">
+      <button class="popup-close" aria-label="Popup schließen">×</button>
+      <h3>[POPUP_HEADLINE]</h3>
+      <p>[POPUP_TEXT]</p>
+      <form class="popup-form js-newsletter-form" action="[NEWSLETTER_ACTION_URL]" method="POST" novalidate>
+        <input type="email" name="email" placeholder="Deine E-Mail" required aria-label="E-Mail Adresse"
+          autocomplete="email" />
+        <button type="submit" class="btn btn--filled btn--wide" style="margin-top:0.5rem;">Jetzt anmelden</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+
+</html>

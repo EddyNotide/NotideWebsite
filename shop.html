@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — NOTIDE</title>
+  <meta name="description" content="[SHOP_META_DESCRIPTION — Handmade, limitierte Einzelstücke von NOTIDE]" />
+  <link rel="canonical" href="https://notide.de/shop.html" />
+  <meta property="og:title"       content="Shop — NOTIDE" />
+  <meta property="og:description" content="[SHOP_META_DESCRIPTION]" />
+  <meta property="og:url"         content="https://notide.de/shop.html" />
+  <meta property="og:image"       content="https://notide.de/assets/images/[OG_IMAGE].jpg" />
+  <link rel="icon" href="assets/logos/favicon-32x32.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="header-left">
+        <a href="index.html" class="header-logo" aria-label="NOTIDE – Startseite"><img width="40%" src="assets/logos/Signatur.png" alt=""></a>
+      </div>
+      <nav class="nav-desktop" aria-label="Hauptnavigation">
+        <a href="shop.html" class="active">Shop</a>
+        <a href="journal.html">Journal</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+      <div class="header-right">
+        <a href="newsletter.html" class="btn">Newsletter</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-mobile" id="mobile-nav" aria-label="Mobile Navigation">
+    <a href="shop.html">Shop</a>
+    <a href="journal.html">Journal</a>
+    <a href="community.html">Community</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Kontakt</a>
+    <a href="newsletter.html">Newsletter</a>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-label="Shop">
+      <div class="container">
+        <span class="label">NOTIDE Collections</span>
+        <h1>Handgemacht. Limitiert. Nachhaltig.</h1>
+        <p>Jedes Stück ist ein Unikat. Per Hand gedruckt und gezeichnet. Kein Warenkorb. Kein Überfluss.</p>
+      </div>
+    </section>
+
+    <!-- How to order -->
+    <section class="section" aria-label="Bestellprozess" style="padding: 2rem 0;">
+      <div class="container">
+        <details style="border: var(--border); padding: 1.25rem;">
+          <summary style="cursor:pointer; font-size:var(--text-xs); letter-spacing:0.15em; text-transform:uppercase; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            Wie funktioniert die Bestellung?
+            <span aria-hidden="true" style="font-size: 1.2rem; font-weight:300;">+</span>
+          </summary>
+          <div style="margin-top:1rem; display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:1rem;">
+            <div>
+              <p class="label" style="margin-bottom:0.5rem;">01</p>
+              <p style="font-size:var(--text-sm); color:var(--gray-dark);">Produkt auswählen und auf „Bestellen" klicken.</p>
+            </div>
+            <div>
+              <p class="label" style="margin-bottom:0.5rem;">02</p>
+              <p style="font-size:var(--text-sm); color:var(--gray-dark);">Bestellformular ausfüllen (Name, Adresse, Produkt).</p>
+            </div>
+            <div>
+              <p class="label" style="margin-bottom:0.5rem;">03</p>
+              <p style="font-size:var(--text-sm); color:var(--gray-dark);">Zahlung per PayPal-Link — sicher und einfach.</p>
+            </div>
+            <div>
+              <p class="label" style="margin-bottom:0.5rem;">04</p>
+              <p style="font-size:var(--text-sm); color:var(--gray-dark);">Dein Teil wird gefertigt und wir versenden schnellstmöglich.</p>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="section" aria-labelledby="shop-products-heading">
+      <div class="container">
+
+        <h2 id="shop-products-heading" class="sr-only">Produkte</h2>
+
+        <!-- ═══════════════════════════════════════════════════
+             PRODUCT CARDS
+             → Für jedes Produkt:
+               1. [PRODUCT_NAME]   → Produktname eintragen
+               2. [PRODUCT_PRICE]  → Preis eintragen (z.B. 89)
+               3. [PRODUCT_DESC]   → Kurze Beschreibung
+               4. [ORDER_FORM_LINK] → Link zum Bestellformular
+               5. img src          → Produktbild einsetzen
+               6. Status: "available" oder "sold" class
+        ═══════════════════════════════════════════════════ -->
+        <div class="shop-grid">
+
+          <!-- Product 1 -->
+          <article class="product-card reveal">
+            <div class="product-card-image" role="img" aria-label="[PRODUCT_1_IMAGE_ALT]">
+              
+                <img
+                  src="assets/images/HoodieHinten.jpg"
+                  alt="[PRODUCT_1_IMAGE_ALT]"
+                  width="600"
+                  height="800"
+                  loading="lazy"
+                />
+             
+              <!-- <span>[IMAGE_PLACEHOLDER]</span> -->
+            </div>
+            <div class="product-card-body">
+              <p class="label">Hoodie - Einzelstück</p>
+              <h3 class="product-card-name">Waves everywhere Hoodie grau-grün</h3>
+              <p class="product-card-desc">
+                Heavy weight Hoodie mit Kaputze ohne Bändsel, handbedruckt, lässiger Fit, vegan, 100% Bio Baumwolle.
+              </p>
+              <div class="product-card-footer">
+                <span class="product-price">90 €</span>
+                <span class="product-status available">print on demand</span>
+              </div>
+              <!-- → [ORDER_FORM_LINK] ersetzen mit echtem Bestellformular (z.B. Typeform, Google Form) -->
+              <a
+                href="https://forms.gle/7F3MnJeiK4jtBBiw9"
+                class="btn btn--wide"
+                style="margin-top: 1rem;"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bestellen
+              </a>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card reveal">
+            <div class="product-card-image" role="img" aria-label="[PRODUCT_2_IMAGE_ALT]">
+              <span><img
+                  src="assets/images/prod1.jpg"
+                  alt="[PRODUCT_1_IMAGE_ALT]"
+                  width="600"
+                  height="800"
+                  loading="lazy"
+                /></span>
+            </div>
+            <div class="product-card-body">
+              <p class="label">T-Shirt</p>
+              <h3 class="product-card-name">Tee Waves everywhere</h3>
+              <p class="product-card-desc">Handgezeichnetes und bedrucktes heavy weight Tee. 100% bio Baumwolle, Oversized, vegan, unisex</p>
+              <div class="product-card-footer">
+                <span class="product-price">45 €</span>
+                <span class="product-status available">Print on demand</span>
+              </div>
+              <a
+                href="https://forms.gle/7F3MnJeiK4jtBBiw9"
+                class="btn btn--wide"
+                style="margin-top: 1rem;"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bestellen
+              </a>
+            </div>
+          </article>
+
+
+         
+          <!-- Product 3 -->
+          <article class="product-card reveal">
+            <div class="product-card-image" role="img" aria-label="[PRODUCT_3_IMAGE_ALT]">
+              <span><img
+                  src="assets/images/capBlack.jpeg"
+                  alt="[PRODUCT_1_IMAGE_ALT]"
+                  width="600"
+                  height="800"
+                  loading="lazy"
+                /></span>
+            </div>
+            <div class="product-card-body">
+              <p class="label">Caps & Beanies</p>
+              <h3 class="product-card-name">Cord Cord Cap black</h3>
+              <p class="product-card-desc">organic 100% Baumwolle - Cord 5 Panel Cap black / green / beige</p>
+              <div class="product-card-footer">
+                <span class="product-price">25€</span>
+                <span class="product-status available">nicht auf Lager</span>
+              </div>
+              <a
+                href="https://forms.gle/JAxStLzQ4ZrdHTWV9"
+                class="btn btn--wide"
+                style="margin-top: 1rem;"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                bestellen
+              </a>
+            </div>
+          </article>
+
+          <!-- ─ PRODUCT 4 ─────────────────────────────── -->
+          <article class="product-card reveal" id="[PRODUCT_SLUG_4]">
+            <div class="product-card-image" role="img" aria-label="[PRODUCT_4_IMAGE_ALT]">
+              <span>coming soon</span>
+            </div>
+            <div class="product-card-body">
+              <p class="label">[PRODUCT_CATEGORY_4]</p>
+              <h2 class="product-card-name">[PRODUCT_NAME_4]</h2>
+              <p class="product-card-desc">[PRODUCT_DESCRIPTION_4]</p>
+              <div class="product-card-footer">
+                <span class="product-price">[PRODUCT_PRICE_4],– €</span>
+                <span class="product-status available">Verfügbar</span>
+              </div>
+              <a
+                href="[ORDER_FORM_LINK_4]"
+                class="btn btn--filled btn--wide"
+                style="margin-top: 1rem;"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bestellen
+              </a>
+            </div>
+          </article>
+
+          <!-- ─ PRODUCT 5 ─────────────────────────────── -->
+          <article class="product-card reveal" id="[PRODUCT_SLUG_5]">
+            <div class="product-card-image" role="img" aria-label="[PRODUCT_5_IMAGE_ALT]">
+              <span>coming soon</span>
+            </div>
+            <div class="product-card-body">
+              <p class="label">[PRODUCT_CATEGORY_5]</p>
+              <h2 class="product-card-name">[PRODUCT_NAME_5]</h2>
+              <p class="product-card-desc">[PRODUCT_DESCRIPTION_5]</p>
+              <div class="product-card-footer">
+                <span class="product-price">[PRODUCT_PRICE_5],– €</span>
+                <span class="product-status available">Verfügbar</span>
+              </div>
+              <a
+                href="[ORDER_FORM_LINK_5]"
+                class="btn btn--filled btn--wide"
+                style="margin-top: 1rem;"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bestellen
+              </a>
+            </div>
+          </article>
+
+          <!-- ─ PRODUCT 6 ─────────────────────────────── -->
+          <article class="product-card reveal" id="[PRODUCT_SLUG_6]">
+            <div class="product-card-image" role="img" aria-label="[PRODUCT_6_IMAGE_ALT]">
+              <span>coming soon</span>
+            </div>
+            <div class="product-card-body">
+              <p class="label">[PRODUCT_CATEGORY_6]</p>
+              <h2 class="product-card-name">[PRODUCT_NAME_6]</h2>
+              <p class="product-card-desc">[PRODUCT_DESCRIPTION_6]</p>
+              <div class="product-card-footer">
+                <span class="product-price">[PRODUCT_PRICE_6],– €</span>
+                <span class="product-status available">Verfügbar</span>
+              </div>
+              <a
+                href="[ORDER_FORM_LINK_6]"
+                class="btn btn--filled btn--wide"
+                style="margin-top: 1rem;"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bestellen
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Shipping Info -->
+    <section class="section" aria-labelledby="shipping-heading">
+      <div class="container">
+        <h2 id="shipping-heading" style="font-style:italic; font-size:var(--text-lg); margin-bottom:1.5rem;">
+          Versand
+        </h2>
+
+        <!--
+          ═══════════════════════════════════════════════
+          VERSANDINFORMATIONEN
+          → Hier Versandpreise und -zeiten anpassen.
+             Diese Tabelle ist einfach editierbar.
+          ═══════════════════════════════════════════════
+        -->
+        <div class="shipping-info">
+          <h3>Versandoptionen</h3>
+          <table class="shipping-table" aria-label="Versandoptionen">
+            <tbody>
+              <tr>
+                <td>Deutschland (Standard)</td>
+                <td>
+                  4,90 € · 7–14 Werktage
+                </td>
+              </tr>
+             
+              <tr>
+                <td>EU (z.B. Dänemark)</td>
+                <!-- → EU Versand: Preise eintragen sobald verfügbar -->
+                <td> folgt · 10-20 Werktage</td>
+              </tr>
+              <tr>
+                <td>Zahlung</td>
+                <td>PayPal, Überweisung, Bitcoin</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size:var(--text-xs); color:var(--gray-dark); margin-top:1rem; letter-spacing:0.04em;">
+            Versand erfolgt nach Zahlungseingang. Bei Fragen: notide.official@gmail.com
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="newsletter-section" aria-label="Newsletter">
+      <div class="container">
+        <span class="label" style="color:var(--tan); display:block; margin-bottom:1rem;">Nie wieder verpassen</span>
+        <h2 style="font-family:var(--font-display); font-style:italic; font-size:var(--text-xl); color:var(--white); margin-bottom:0.75rem;">
+        Bleib immer Up to Date.
+        </h2>
+        <p style="color:var(--gray-mid); font-size:var(--text-sm); max-width:40ch; margin-bottom:2rem; line-height:1.65;">
+          Thoughts from the water - neue Drops - Community News
+        </p>
+        <a href="newsletter.html" class="btn" style="border-color:var(--white); color:var(--white);">
+          Newsletter abonnieren
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand-name">NOTIDE</p>
+          <p class="footer-brand-tagline">not only for surfers</p>
+        </div>
+        <div class="footer-col">
+          <h3>Shop</h3>
+          <ul><li><a href="shop.html">Alle Produkte</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h3>Über uns</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="community.html">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Kontakt</h3>
+          <ul>
+            <li><a href="contact.html">Schreib uns</a></li>
+            <li><a href="https://www.instagram.com/notide.official?igsh=eHd0Z2xsbjNvY2I4&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom-text">© <span class="js-year"></span> NOTIDE.</p>
+        <nav class="footer-legal-links" aria-label="Rechtliches">
+          <a href="legal.html">Impressum</a>
+          <a href="legal.html#datenschutz">Datenschutz</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <div id="newsletter-popup" role="dialog" aria-modal="true" aria-label="Newsletter" aria-hidden="true">
+    <div class="popup-inner">
+      <button class="popup-close" aria-label="Popup schließen">×</button>
+      <h3>[POPUP_HEADLINE]</h3>
+      <p>[POPUP_TEXT]</p>
+      <form class="popup-form js-newsletter-form" action="[NEWSLETTER_ACTION_URL]" method="POST" novalidate>
+        <input type="email" name="email" placeholder="Deine E-Mail" required aria-label="E-Mail Adresse" autocomplete="email" />
+        <button type="submit" class="btn btn--filled btn--wide" style="margin-top:0.5rem;">Jetzt anmelden</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

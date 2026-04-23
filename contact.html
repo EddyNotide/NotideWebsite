@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt — NOTIDE</title>
+  <meta name="description" content="[CONTACT_META_DESCRIPTION — Schreib uns. NOTIDE kontaktieren.]" />
+  <link rel="canonical" href="https://notide.de/contact.html" />
+  <meta property="og:title"       content="Kontakt — NOTIDE" />
+  <meta property="og:description" content="[CONTACT_META_DESCRIPTION]" />
+  <meta property="og:url"         content="https://notide.de/contact.html" />
+  <link rel="icon" href="assets/logos/favicon-32x32.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="header-left">
+        <a href="index.html" class="header-logo" aria-label="NOTIDE – Startseite"><img width="40%" src="assets/logos/Signatur.png" alt=""></a>
+      </div>
+      <nav class="nav-desktop" aria-label="Hauptnavigation">
+        <a href="shop.html">Shop</a>
+        <a href="journal.html">Journal</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Kontakt</a>
+      </nav>
+      <div class="header-right">
+        <a href="newsletter.html" class="btn">Newsletter</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-mobile" id="mobile-nav" aria-label="Mobile Navigation">
+    <a href="shop.html">Shop</a>
+    <a href="journal.html">Journal</a>
+    <a href="community.html">Community</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Kontakt</a>
+    <a href="newsletter.html">Newsletter</a>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-label="Kontakt">
+      <div class="container">
+        <span class="label">Kontakt</span>
+        <h1>Du hast Anregungen oder eine Anfrage?</h1>
+        <p>
+          Fragen zur Bestellung, Einsendungen, Kooperationen, Ideen — immer her damit! ;)
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" aria-labelledby="contact-form-heading">
+      <div class="container">
+        <div style="display:grid; grid-template-columns:1fr; gap:4rem;">
+
+          <!-- Contact Form -->
+          <div style="max-width:560px;">
+            <h2
+              id="contact-form-heading"
+              style="font-style:italic; font-size:var(--text-xl); margin-bottom:2rem;"
+            >
+              Nachricht schicken.
+            </h2>
+
+            <!--
+              ═══════════════════════════════════════════════
+              KONTAKTFORMULAR
+              → action="[CONTACT_FORM_ACTION_URL]" ersetzen.
+                Optionen:
+                  - Formspree: https://formspree.io/f/XXXXXX
+                  - Netlify Forms: method="POST" + netlify Attribut
+                  - eigener Server
+              ═══════════════════════════════════════════════
+            -->
+            <form
+              action="https://formspree.io/f/mgorydgr"
+              method="POST"
+              enctype="multipart/form-data"
+              aria-label="Kontaktformular"
+              novalidate
+            >
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Name</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  placeholder="Dein Name"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-email">E-Mail</label>
+                <input
+                  class="form-input"
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  placeholder="deine@email.de"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-subject">Betreff</label>
+                <select class="form-input" id="contact-subject" name="subject" style="cursor:pointer;">
+                  <option value="">— Bitte wählen —</option>
+                  <option value="bestellung">Frage zur Bestellung</option>
+                  <option value="einsendung">Einsendung / Submission</option>
+                  <option value="kooperation">Kooperation</option>
+                  <option value="presse">Presse / Medien</option>
+                  <option value="sonstiges">Sonstiges</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-message">Nachricht</label>
+                <textarea
+                  class="form-input"
+                  id="contact-message"
+                  name="message"
+                  placeholder="Deine Nachricht..."
+                  required
+                  rows="5"
+                ></textarea>
+              </div>
+
+              <!-- Optional: Datei-Upload für Einsendungen -->
+              
+              <div class="form-group">
+                <label class="form-label" for="contact-file">Datei (optional)</label>
+                <input
+                  type="file"
+                  id="contact-file"
+                  name="attachment"
+                  class="form-input"
+                  accept="image/*,.pdf"
+                />
+              </div>
+             
+
+              <button type="submit" class="btn btn--filled">
+                Absenden
+              </button>
+
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <hr class="rule" />
+            <h2 style="font-style:italic; font-size:var(--text-lg); margin-bottom:1.5rem;">
+              Direkter Kontakt.
+            </h2>
+
+            <div class="values-list">
+
+              <div class="values-item">
+                <span class="values-num" aria-hidden="true">@</span>
+                <div class="values-text">
+                  <h3>E-Mail</h3>
+                  <!--
+                    → [CONTACT_EMAIL] ersetzen
+                    Beispiel: hallo@notide.de
+                  -->
+                  <p>
+                    <a
+                      href="mailto: notide.official@gmail.com"
+                      class="link-underline"
+                    >
+                      notide.official@gmail.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="values-item">
+                <span class="values-num" aria-hidden="true">↗</span>
+                <div class="values-text">
+                  <h3>Instagram</h3>
+                  <p>
+                    <a
+                      href="https://www.instagram.com/notide.official?igsh=eHd0Z2xsbjNvY2I4&utm_source=qr"
+                      class="link-underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      @notide.de.official
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="values-item">
+                <span class="values-num" aria-hidden="true">⌛</span>
+                <div class="values-text">
+                  <h3>Antwortzeit</h3>
+                  <p style="color:var(--gray-dark);">
+                    Wir antworten so schnell wie möglich.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Einsendungen Info -->
+            <div style="margin-top:2rem; border:var(--border); padding:1.5rem;">
+              <p class="label" style="margin-bottom:0.75rem;">Einsendungen</p>
+              <p style="font-size:var(--text-sm); color:var(--gray-dark); line-height:1.65;">
+                Du hast Bilder, Stories oder Fundstücke, die zur Community passen? Schick sie uns — das Beste davon landet auf der Website.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand-name">NOTIDE</p>
+          <p class="footer-brand-tagline">not only for surfers</p>
+        </div>
+        <div class="footer-col">
+          <h3>Shop</h3>
+          <ul><li><a href="shop.html">Alle Produkte</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h3>Über uns</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="community.html">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Kontakt</h3>
+          <ul>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="https://www.instagram.com/notide.official?igsh=eHd0Z2xsbjNvY2I4&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom-text">© <span class="js-year"></span> NOTIDE.</p>
+        <nav class="footer-legal-links" aria-label="Rechtliches">
+          <a href="legal.html">Impressum</a>
+          <a href="legal.html#datenschutz">Datenschutz</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <div id="newsletter-popup" role="dialog" aria-modal="true" aria-label="Newsletter" aria-hidden="true">
+    <div class="popup-inner">
+      <button class="popup-close" aria-label="Popup schließen">×</button>
+      <h3>[POPUP_HEADLINE]</h3>
+      <p>[POPUP_TEXT]</p>
+      <form class="popup-form js-newsletter-form" action="[NEWSLETTER_ACTION_URL]" method="POST" novalidate>
+        <input type="email" name="email" placeholder="Deine E-Mail" required aria-label="E-Mail Adresse" autocomplete="email" />
+        <button type="submit" class="btn btn--filled btn--wide" style="margin-top:0.5rem;">Jetzt anmelden</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

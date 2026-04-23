@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  NOTIDE — sitemap.xml
+  → Datum in <lastmod> aktualisieren, wenn Inhalte geändert werden.
+  → Neue Seiten nach gleichem Muster hinzufügen.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://notide.de/</loc>
+    <lastmod>[DATE_LAST_MODIFIED — z.B. 2025-06-01]</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://notide.de/shop.html</loc>
+    <lastmod>[DATE_LAST_MODIFIED]</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://notide.de/newsletter.html</loc>
+    <lastmod>[DATE_LAST_MODIFIED]</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://notide.de/journal.html</loc>
+    <lastmod>[DATE_LAST_MODIFIED]</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://notide.de/community.html</loc>
+    <lastmod>[DATE_LAST_MODIFIED]</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://notide.de/about.html</loc>
+    <lastmod>[DATE_LAST_MODIFIED]</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://notide.de/contact.html</loc>
+    <lastmod>[DATE_LAST_MODIFIED]</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

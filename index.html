@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════════════════════════════════════
+       SEO META TAGS
+       → Replace content with real copy
+  ═══════════════════════════════════════════ -->
+  <title>NOTIDE — not only for surfers</title>
+  <meta name="description" content="[META_DESCRIPTION — max. 155 Zeichen]" />
+  <meta name="author" content="NOTIDE" />
+  <link rel="canonical" href="https://notide.de/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://notide.de/" />
+  <meta property="og:title"       content="NOTIDE — [OG_TITLE]" />
+  <meta property="og:description" content="[OG_DESCRIPTION]" />
+  <meta property="og:image"       content="https://notide.de/assets/images/[OG_IMAGE].jpg" />
+  <meta property="og:locale"      content="de_DE" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="NOTIDE — [OG_TITLE]" />
+  <meta name="twitter:description" content="[OG_DESCRIPTION]" />
+  <meta name="twitter:image"       content="https://notide.de/assets/images/[OG_IMAGE].jpg" />
+
+  <!-- Favicon → replace with real file -->
+  <link rel="icon" href="assets/logos/favicon-32x32.ico" type="image/x-icon" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Preconnect (none needed — no external resources) -->
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════════
+       NOTICE BANNER (optional — e.g. new drop / event)
+       Delete this section if not needed.
+  ════════════════════════════════════════════════════ -->
+  <div class="notice-banner" role="status" aria-live="polite">
+    NOTICE: Lasst uns zusammen einen Ort für die Kieler Surf Szene schaffen! &nbsp;·&nbsp;
+    <a href="https://forms.gle/W64qUrPJdreRGq7MA" style="border-bottom: 1px solid currentColor;">Hilf mit!</a>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════
+       SITE HEADER
+  ════════════════════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+
+      <!-- Left: logo -->
+      <div class="header-left">
+        <a href="index.html" class="header-logo" aria-label="NOTIDE – Startseite">
+          <!-- Replace text with <img> tag if you have an SVG/image logo -->
+          <!-- [LOGO_PLACEHOLDER] -->
+          <img width="40%" src="assets/logos/Signatur.png" alt="">
+        </a>
+      </div>
+
+      <!-- Center: desktop nav -->
+      <nav class="nav-desktop" aria-label="Hauptnavigation">
+        <a href="shop.html">Shop</a>
+        <a href="journal.html">Journal</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+
+      <!-- Right: newsletter CTA + mobile toggle -->
+      <div class="header-right">
+        <a href="newsletter.html" class="btn" aria-label="Newsletter abonnieren">
+          Newsletter
+        </a>
+
+        <!-- Mobile menu toggle -->
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          aria-label="Menü öffnen"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile navigation overlay -->
+  <nav class="nav-mobile" id="mobile-nav" aria-label="Mobile Navigation">
+    <a href="shop.html">Shop</a>
+    <a href="journal.html">Journal</a>
+    <a href="community.html">Community</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Kontakt</a>
+    <a href="newsletter.html">Newsletter</a>
+  </nav>
+
+  <!-- ════════════════════════════════════════════════════
+       MAIN CONTENT
+  ════════════════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ─── HERO ─────────────────────────────────────── -->
+    <section class="hero" aria-label="Hero">
+      <div class="container">
+        <div class="hero-inner">
+
+          <span class="label" style="display:block; margin-bottom: 1rem;">
+            Kiel / handmade from the baltic
+          </span>
+
+          <!-- Main wordmark / headline -->
+          <!-- → Replace [HERO_HEADLINE] with your actual headline -->
+          <h1 class="hero-wordmark">
+            SURF.<br>CREATE. <br><p>living freedom</p>
+          </h1>
+
+          <p class="hero-sub">
+            <!-- → Replace [SHORT_DESCRIPTION] -->
+            Für alle, die das Meer kennen, echte Verbindung und Freiheit suchen. 
+          </p>
+
+          <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="shop.html" class="btn btn--filled">Shop</a>
+            <a href="newsletter.html" class="btn">Newsletter</a>
+          </div>
+
+          <!-- Hero image -->
+          <!-- → Replace [IMAGE_PLACEHOLDER] with actual <img> -->
+          <div class="hero-image" style="margin-top: 3rem;" role="img" aria-label="[HERO_IMAGE_ALT_TEXT]">
+            
+              <img
+                src="assets/images/sberg.jpg"
+                data-src="assets/images/sberg.jpg"
+                alt="[HERO_IMAGE_ALT_TEXT]"
+                width="1200"
+                height="675"
+                loading="lazy"
+              />
+           
+            <!-- <span class="placeholder-text">[IMAGE_PLACEHOLDER — 1200×675px empfohlen]</span> -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FEATURED PRODUCTS ─────────────────────────── -->
+    <section class="section" aria-labelledby="products-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <h2 id="products-heading" style="font-style:italic;">
+            Aktuelle Pieces
+          </h2>
+          <a href="shop.html" class="link-underline caps">Alle ansehen</a>
+        </div>
+
+        <!-- Product Grid — 3 featured items -->
+        <!-- → For each product: replace name, price, desc, image, and order link -->
+        <div class="shop-grid">
+
+          <!-- Product 1 -->
+          <article class="product-card reveal">
+            <div class="product-card-image" role="img" aria-label="[PRODUCT_1_IMAGE_ALT]">
+              
+                <img
+                  src="assets/images/HoodieHinten.jpg"
+                  alt="[PRODUCT_1_IMAGE_ALT]"
+                  width="600"
+                  height="800"
+                  loading="lazy"
+                />
+             
+              <!-- <span>[IMAGE_PLACEHOLDER]</span> -->
+            </div>
+            <div class="product-card-body">
+              <p class="label">Hoodie - Einzelstück</p>
+              <h3 class="product-card-name">Waves everywhere Hoodie grau-grün</h3>
+              <p class="product-card-desc">
+                Heavy weight Hoodie mit Kaputze ohne Bändsel, handbedruckt, lässiger Fit, vegan, 100% Bio Baumwolle.
+              </p>
+              <div class="product-card-footer">
+                <span class="product-price">90 €</span>
+                <span class="product-status available">print on demand</span>
+              </div>
+              <!-- → [ORDER_FORM_LINK] ersetzen mit echtem Bestellformular (z.B. Typeform, Google Form) -->
+              <a
+                href="https://forms.gle/7F3MnJeiK4jtBBiw9"
+                class="btn btn--wide"
+                style="margin-top: 1rem;"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bestellen
+              </a>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card reveal">
+            <div class="product-card-image" role="img" aria-label="[PRODUCT_2_IMAGE_ALT]">
+              <span><img
+                  src="assets/images/prod1.jpg"
+                  alt="[PRODUCT_1_IMAGE_ALT]"
+                  width="600"
+                  height="800"
+                  loading="lazy"
+                /></span>
+            </div>
+            <div class="product-card-body">
+              <p class="label">T-Shirt</p>
+              <h3 class="product-card-name">Tee Waves everywhere</h3>
+              <p class="product-card-desc">Handgezeichnetes und bedrucktes heavy weight Tee. 100% bio Baumwolle, Oversized, vegan, unisex</p>
+              <div class="product-card-footer">
+                <span class="product-price">45 €</span>
+                <span class="product-status available">Print on demand</span>
+              </div>
+              <a
+                href="https://forms.gle/7F3MnJeiK4jtBBiw9"
+                class="btn btn--wide"
+                style="margin-top: 1rem;"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bestellen
+              </a>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card reveal">
+            <div class="product-card-image" role="img" aria-label="[PRODUCT_3_IMAGE_ALT]">
+              <span><img
+                  src="assets/images/capBlack.jpeg"
+                  alt="[PRODUCT_1_IMAGE_ALT]"
+                  width="600"
+                  height="800"
+                  loading="lazy"
+                /></span>
+            </div>
+            <div class="product-card-body">
+              <p class="label">Caps & Beanies</p>
+              <h3 class="product-card-name">Cord Cord Cap black</h3>
+              <p class="product-card-desc">organic 100% Baumwolle - Cord 5 Panel Cap black / green / beige</p>
+              <div class="product-card-footer">
+                <span class="product-price">25€</span>
+                <span class="product-status available">nicht auf Lager</span>
+              </div>
+              <a
+                href="https://forms.gle/JAxStLzQ4ZrdHTWV9"
+                class="btn btn--wide"
+                style="margin-top: 1rem;"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                bestellen
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT TEASER ──────────────────────────────── -->
+    <section class="section" aria-label="Über NOTIDE">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+
+          <div style="max-width: 55ch;" class="reveal">
+            <span class="label" style="display:block; margin-bottom: 1rem;">
+              Was ist NOTIDE?
+            </span>
+            <h2 style="font-style:italic; font-size: var(--text-xl); margin-bottom: 1.5rem; line-height:1.1;">
+              Mehr als nur eine Surf Brand
+            </h2>
+            <p style="color: var(--gray-dark); line-height:1.75; margin-bottom: 1.5rem;">
+              NOTIDE ist der Versuch, einen echten Treffpunkt für die Surf-Community aufzubauen — einen Ort, an dem sich Menschen wohlfühlen, verbinden und gemeinsam etwas entstehen lassen können.
+            </p>
+            <a href="about.html" class="link-underline caps">Mehr erfahren</a>
+          </div>
+
+          <!-- Optional: Bild neben Text -->
+          <div class="img-placeholder reveal" style="aspect-ratio: 4/3;">
+            <img
+                  src="assets/images/ichportugal.jpeg"
+                  alt="[PRODUCT_1_IMAGE_ALT]"
+                  width="1200"
+                  height="675"
+                  loading="lazy"
+                />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── JOURNAL TEASER ────────────────────────────── -->
+    <section class="section" aria-labelledby="journal-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <h2 id="journal-heading" style="font-style:italic;">Journal</h2>
+          <a href="journal.html" class="link-underline caps">Alle Beiträge</a>
+        </div>
+
+        <div class="journal-list">
+
+          <!-- Journal Entry 1 -->
+          <a href="journal.html#ARTICLE_SLUG_1" class="journal-item reveal">
+            <span class="journal-item-date">16.04.2026</span>
+            <div>
+              <h3 class="journal-item-title">Über die Zukunft der Kieler Surf Szene</h3>
+              <p class="journal-item-excerpt">Secret Spot ist dicht, wir alle trauern um den nahezu letzten richtigen Treffpunkt der Szene. Wie soll es weiter gehen?</p>
+            </div>
+          </a>
+
+          <!-- Journal Entry 2 -->
+          <a href="journal.html#[ARTICLE_SLUG_2]" class="journal-item reveal">
+            <span class="journal-item-date">[ARTICLE_DATE_2]</span>
+            <div>
+              <h3 class="journal-item-title">[ARTICLE_TITLE_2]</h3>
+              <p class="journal-item-excerpt">[ARTICLE_EXCERPT_2]</p>
+            </div>
+          </a>
+
+          <!-- Journal Entry 3 -->
+          <a href="journal.html#[ARTICLE_SLUG_3]" class="journal-item reveal">
+            <span class="journal-item-date">[ARTICLE_DATE_3]</span>
+            <div>
+              <h3 class="journal-item-title">[ARTICLE_TITLE_3]</h3>
+              <p class="journal-item-excerpt">[ARTICLE_EXCERPT_3]</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── NEWSLETTER SECTION ───────────────────────── -->
+    <section class="newsletter-section" aria-labelledby="newsletter-heading">
+      <div class="container">
+
+        <span class="label" style="color: var(--tan); display:block; margin-bottom:1rem;">
+          Community
+        </span>
+
+        <h2 id="newsletter-heading" style="font-family:var(--font-display); font-style:italic; font-size:var(--text-xl); color:var(--white); margin-bottom:0.75rem;">
+          Bleib auf dem Laufenden.
+        </h2>
+
+        <p style="color:var(--gray-mid); font-size:var(--text-sm); max-width:42ch; margin-bottom:2rem; line-height:1.65;">
+          Stories from the water, News rund um NOTIDE, unsere Community und die Kieler Surf Szene.
+        </p>
+
+        <!-- → js-newsletter-form Klasse für JS-Handler -->
+        <form
+          class="newsletter-form js-newsletter-form"
+          action="https://f9687fa7.sibforms.com/serve/MUIFADpKIJYaWbZKaLKrdV6HrvJprve6KB01-eT9bGP_XV4n6An2AKjuWE6p5j80feuFTHn0nzn1G3hDAf5vYckVc6GpySZ8i3yOCTKIeO6NsaCOD3q894R4dP0TVrsSQYk72qqh24xU6dl0IyO-BmCoWUDdb5J6lfqVOV8jzvoNlIQWf9xPq-MmteRicMIi5RAEWRQoy-hgnPWqLw=="
+          method="POST"
+          aria-label="Newsletter Anmeldung"
+          novalidate
+        >
+          <input
+            type="email"
+            name="email"
+            placeholder="Deine E-Mail"
+            required
+            aria-label="E-Mail Adresse"
+            autocomplete="email"
+          />
+          <button type="submit" class="btn">Anmelden</button>
+        </form>
+
+        <p class="newsletter-note" style="margin-top: 1rem;">
+          Kein Spam. Abmeldung jederzeit möglich.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ─── COMMUNITY TEASER ──────────────────────────── -->
+    <section class="section" aria-labelledby="community-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <h2 id="community-heading" style="font-style:italic;">Community</h2>
+          <a href="community.html" class="link-underline caps">Mehr</a>
+        </div>
+
+        <div class="community-grid">
+
+          <div class="community-card reveal">
+            <p class="community-card-type">Event</p>
+            <h3 class="community-card-title">Community Events</h3>
+            <p class="community-card-date">coming soon</p>
+            <p class="community-card-desc">sobald etwas geplant ist siehst du es hier. </p>
+          </div>
+
+          <div class="community-card reveal">
+            <p class="community-card-type">Flohmarkt</p>
+            <h3 class="community-card-title">Surf Flohmarkt</h3>
+            <p class="community-card-date">26.04.2026</p>
+            <p class="community-card-desc">Flohmarkt beim Surf Club Kiel e.V. Kuchenspende oder Standgebühr 10€ <br><a href="https://www.instagram.com/p/DWzT4C0Cujp/?igsh=MWFucXBxYTJydnZrZg==">Zum Post</a></p>
+          </div>
+
+          <div class="community-card reveal">
+            <p class="community-card-type">Film</p>
+            <h3 class="community-card-title">Antarctica - Domain One narrated by Kelly Slater</h3>
+            <p class="community-card-date">08.05.2026</p>
+            <p class="community-card-desc">Surfen und Naturschutz gehen Hand in Hand. Cinemare Meeresfilmfestival <br> <a href="https://www.studio-filmtheater.de/movie/antarctica">Studio Filmtheater Kiel</a></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════════
+       SITE FOOTER
+  ════════════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div>
+          <p class="footer-brand-name">NOTIDE</p>
+          <p class="footer-brand-tagline">
+            not only for surfers
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-col">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="shop.html">Alle Produkte</a></li>
+            <li><a href="shop.html#[NEW_ARRIVALS_ANCHOR]">Neuheiten</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Über uns</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="community.html">Community</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Kontakt</h3>
+          <ul>
+            <li><a href="contact.html">Schreib uns</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <!-- → Replace with real social links -->
+            <li><a href="https://www.instagram.com/notide.official?igsh=eHd0Z2xsbjNvY2I4&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom-text">
+          © <span class="js-year"></span> NOTIDE. Alle Rechte vorbehalten.
+        </p>
+        <nav class="footer-legal-links" aria-label="Rechtliches">
+          <a href="legal.html">Impressum</a>
+          <a href="legal.html#datenschutz">Datenschutz</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════════════════════
+       NEWSLETTER POPUP CONTAINER
+       Content is injected by JS. Stays hidden until triggered.
+  ════════════════════════════════════════════════════ -->
+  <div
+    id="newsletter-popup"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Newsletter Anmeldung"
+    aria-hidden="true"
+  >
+    <div class="popup-inner">
+      <button class="popup-close" aria-label="Popup schließen">×</button>
+      <h3>Join the wave - bleib up to date</h3>
+      <p>Trage dich für den Newletter ein wenn du aktiv mitwirken und auf dem Laufenden bleiben möchtest!</p>
+      <form
+        class="popup-form js-newsletter-form"
+        action="https://f9687fa7.sibforms.com/serve/MUIFADpKIJYaWbZKaLKrdV6HrvJprve6KB01-eT9bGP_XV4n6An2AKjuWE6p5j80feuFTHn0nzn1G3hDAf5vYckVc6GpySZ8i3yOCTKIeO6NsaCOD3q894R4dP0TVrsSQYk72qqh24xU6dl0IyO-BmCoWUDdb5J6lfqVOV8jzvoNlIQWf9xPq-MmteRicMIi5RAEWRQoy-hgnPWqLw=="
+        method="POST"
+        novalidate
+      >
+        <input
+          type="email"
+          name="email"
+          placeholder="Deine E-Mail"
+          required
+          aria-label="E-Mail Adresse"
+          autocomplete="email"
+        />
+        <button type="submit" class="btn btn--filled btn--wide" style="margin-top: 0.5rem;">
+          Jetzt anmelden
+        </button>
+      </form>
+      <p class="newsletter-note" style="margin-top: 0.75rem;">
+        Kein Spam. Abmeldung jederzeit möglich.
+      </p>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="main.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+# NOTIDE — robots.txt
+# https://notide.de/robots.txt
+
+User-agent: *
+Allow: /
+
+# Seiten, die nicht indexiert werden sollen
+Disallow: /assets/
+
+# Sitemap
+Sitemap: https://notide.de/sitemap.xml

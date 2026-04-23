@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsletter — NOTIDE</title>
+  <meta name="description" content="[NEWSLETTER_META_DESCRIPTION — max. 155 Zeichen]" />
+  <link rel="canonical" href="https://notide.de/newsletter.html" />
+  <meta property="og:title" content="Newsletter — NOTIDE" />
+  <meta property="og:description" content="[NEWSLETTER_META_DESCRIPTION]" />
+  <meta property="og:url" content="https://notide.de/newsletter.html" />
+  <meta property="og:image" content="https://notide.de/assets/images/[OG_IMAGE].jpg" />
+  <link rel="icon" href="assets/logos/favicon-32x32.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════════════════
+       SITE HEADER
+  ════════════════════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="header-left">
+        <a href="index.html" class="header-logo" aria-label="NOTIDE – Startseite"><img width="40%"
+            src="assets/logos/Signatur.png" alt=""></a>
+      </div>
+      <nav class="nav-desktop" aria-label="Hauptnavigation">
+        <a href="shop.html">Shop</a>
+        <a href="journal.html">Journal</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+      <div class="header-right">
+        <a href="newsletter.html" class="btn" aria-label="Newsletter">Newsletter</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-mobile" id="mobile-nav" aria-label="Mobile Navigation">
+    <a href="shop.html">Shop</a>
+    <a href="journal.html">Journal</a>
+    <a href="community.html">Community</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Kontakt</a>
+    <a href="newsletter.html">Newsletter</a>
+  </nav>
+
+  <!-- ════════════════════════════════════════════════════
+       MAIN CONTENT
+  ════════════════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-label="Newsletter">
+      <div class="container">
+        <span class="label">Community</span>
+        <!-- → Replace [NEWSLETTER_PAGE_HEADLINE] -->
+        <h1>Sei aktiv dabei</h1>
+        <p>
+          <!-- → Replace [NEWSLETTER_PAGE_DESCRIPTION] -->
+          Du kannst aktiv mitwirken! Kein Spam, keine Werbung, nur echte Stories und Verbindung, damit NOTIDE nicht für
+          die Communnity, sondern MIT der Community agiert.
+        </p>
+        <p>Wenn du sofort Teil der Bewegung sein möchtest, dann nimm dir kurz 2 min Zeit für diese Umfrage:</p> <br>
+        <a href="https://forms.gle/DnJBY9bGSQEVJXw9A" style="text-decoration: underline;">Community Umfrage - Zukunft
+          der Kieler Surf Szene</a>
+      </div>
+    </section>
+
+    <!-- Newsletter Form Section -->
+    <section class="section" aria-labelledby="newsletter-main-heading">
+      <div class="container">
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: 4rem;">
+
+          <!-- Form -->
+          <div style="max-width: 520px;">
+
+            <h2 id="newsletter-main-heading"
+              style="font-style:italic; font-size:var(--text-xl); margin-bottom:0.75rem;">
+              Newsletter abonnieren
+            </h2>
+
+            <p style="color:var(--gray-dark); font-size:var(--text-sm); margin-bottom:2rem; line-height:1.7;">
+              Wir schreiben dir wenn es wichtige News gibt. Falls du Anregungen hast, nutze gerne das Kontaktformular.
+            </p>
+
+            <!-- ═══════════════════════════════════════════
+                 NEWSLETTER FORM
+                 → WICHTIG: action="[NEWSLETTER_ACTION_URL]" ersetzen
+                   z.B. Mailchimp embed code, Brevo, Formspree, etc.
+            ═══════════════════════════════════════════ -->
+            <form class="js-newsletter-form"
+              action="https://f9687fa7.sibforms.com/serve/MUIFADpKIJYaWbZKaLKrdV6HrvJprve6KB01-eT9bGP_XV4n6An2AKjuWE6p5j80feuFTHn0nzn1G3hDAf5vYckVc6GpySZ8i3yOCTKIeO6NsaCOD3q894R4dP0TVrsSQYk72qqh24xU6dl0IyO-BmCoWUDdb5J6lfqVOV8jzvoNlIQWf9xPq-MmteRicMIi5RAEWRQoy-hgnPWqLw=="
+              method="POST" aria-label="Newsletter Anmeldung" novalidate
+              style="display:flex; flex-direction:column; gap:1.5rem;">
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="nl-email">E-Mail Adresse</label>
+                <input class="form-input" type="email" id="nl-email" name="email" placeholder="deine@email.de" required
+                  autocomplete="email" />
+              </div>
+
+              <!-- Optional: First name field -->
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="nl-name">Vorname</label>
+                <input class="form-input" type="text" id="nl-name" name="fname" placeholder="Dein Vorname"
+                  autocomplete="given-name" />
+              </div>
+
+              <!-- Privacy consent -->
+              <label
+                style="display:flex; align-items:flex-start; gap:0.75rem; cursor:pointer; font-size:var(--text-sm); color:var(--gray-dark); line-height:1.55;">
+                <input type="checkbox" name="consent" required
+                  style="margin-top:3px; accent-color:var(--ink); flex-shrink:0;" />
+                Ich bin einverstanden, dass NOTIDE mir E-Mails sendet. Abmeldung jederzeit möglich.
+                Mehr in der <a href="legal.html#datenschutz" class="link-underline">Datenschutzerklärung</a>.
+              </label>
+
+              <button type="submit" class="btn btn--filled" style="align-self:flex-start;">
+                Jetzt anmelden
+              </button>
+
+            </form>
+
+            <p class="newsletter-note" style="margin-top:1.5rem;">
+              [NEWSLETTER_NOTE — z.B. "Kein Spam. Abmeldung jederzeit möglich. Daten werden nicht weitergegeben."]
+            </p>
+
+            <!-- ═══════════════════════════════════════════
+                 ALTERNATIVE: Eingebettetes Formular
+                 Falls du Mailchimp o.ä. nutzt, kannst du hier
+                 deren Embed-Code einfügen und das Formular
+                 oben entfernen.
+
+                 [EMBEDDED_NEWSLETTER_FORM_CODE_HERE]
+            ═══════════════════════════════════════════ -->
+
+          </div>
+
+          <!-- What to expect -->
+          <div>
+            <hr class="rule" />
+            <h2 style="font-style:italic; font-size:var(--text-lg); margin-bottom:1.5rem;">
+              Was dich erwartet.
+            </h2>
+
+            <div class="values-list">
+              <div class="values-item">
+                <span class="values-num">01</span>
+                <div class="values-text">
+                  <h3>News aus der Szene</h3>
+                  <p>Erfahre als erster / erste, was abgeht!</p>
+                </div>
+              </div>
+              <div class="values-item">
+                <span class="values-num">02</span>
+                <div class="values-text">
+                  <h3>Thoughts from the water</h3>
+                  <p>Geschichten. Gedanken. Ehrlichkeit.</p>
+                </div>
+              </div>
+              <div class="values-item">
+                <span class="values-num">03</span>
+                <div class="values-text">
+                  <h3>Community Events</h3>
+                  <p>Events, Meetups, Beisammensein - echte Begegnung und Austausch</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof / Quote (optional) -->
+    <section class="section" aria-label="Stimmen">
+      <div class="container">
+        <blockquote style="max-width:50ch; margin:0;">
+          <p
+            style="font-family:var(--font-display); font-size:var(--text-xl); font-style:italic; line-height:1.15; margin-bottom:1rem;">
+            "Es fehlt einfach ein Treffpunkt" - "Mega schön, dass hier was entstehen soll!" — Zitate aus der Community
+          </p>
+          <footer style="font-size:var(--text-sm); color:var(--gray-dark); letter-spacing:0.05em;">
+            — anonyme Teilnehmer, [Community Umfrage]
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand-name">NOTIDE</p>
+          <p class="footer-brand-tagline">not only for surfers</p>
+        </div>
+        <div class="footer-col">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="shop.html">Alle Produkte</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Über uns</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="community.html">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Kontakt</h3>
+          <ul>
+            <li><a href="contact.html">Schreib uns</a></li>
+            <li><a href="https://www.instagram.com/notide.official?igsh=eHd0Z2xsbjNvY2I4&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom-text">© <span class="js-year"></span> NOTIDE.</p>
+        <nav class="footer-legal-links" aria-label="Rechtliches">
+          <a href="legal.html">Impressum</a>
+          <a href="legal.html#datenschutz">Datenschutz</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Newsletter Popup (auf dieser Seite deaktivieren, da schon Formular vorhanden) -->
+  <div id="newsletter-popup" aria-hidden="true"></div>
+
+  <script src="main.js" defer></script>
+</body>
+
+</html>
